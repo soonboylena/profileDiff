@@ -13,7 +13,7 @@ public class PropertiesReader implements IDiffFileReader {
     @Override
     public boolean isSupport(File file) {
         String name = file.getName();
-        return file.isFile() && (name.endsWith(".properties") || name.equals(".properties.zh"));
+        return file.isFile() && (name.endsWith(".properties") || name.endsWith(".properties.zh"));
     }
 
     @Override
